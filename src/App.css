@@ -1,3 +1,8 @@
+body {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.checkbox-input {
+  accent-color: #46c3e5;
 }

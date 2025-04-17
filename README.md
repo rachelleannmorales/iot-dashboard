@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# IoT Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Implementation Insights
 
-## Available Scripts
+### Most Interesting Aspects :star2:
+The most interesting part was implementing real-time WebSocket communication to reflect live sensor states on the UI. Managing dynamic data with useReducer and updating the visual state seamlessly was both challenging and rewarding. It was also fun to make the data visually intuitive using gauge chart and dark mode.
 
-In the project directory, you can run:
+### Technical Challenges :thinking:
+The most cumbersome part was handling WebSocket disconnections and reconnections, especially dealing with network drops, silent socket closures, and ensuring the client correctly attempts reconnection using the proper endpoint. Debugging silent failures or idle timeouts also added friction.
 
-### `npm start`
+## Future Improvements :computer:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Enhanced User Experience
+1. Add clear status indicators for showing Websocket status
+2. Include auto-retry countdowns so users know when reconnection attempts will happen.
+3. Provide sensor data history for better insights and tracking
+4. Add an option to toggle between dark and light mode for user preference
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation :gear:
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Start the application with `npm start`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Run tests :white_check_mark:
+```
+npm run test
+```
